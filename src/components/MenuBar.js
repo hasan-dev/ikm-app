@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, TouchableOpacity, StatusBar, Image } from "react-native";
+import { View, Text, TouchableOpacity, StatusBar, Image, Linking } from "react-native";
 import Icon from 'react-native-vector-icons/Ionicons';
 
 
@@ -24,7 +24,8 @@ const MenuBar = () => {
           <Text style={{color: "#34354E"}}>product</Text>
         </TouchableOpacity>
         <TouchableOpacity 
-          style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+          style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}
+          onPress={()=>Linking.openURL("https://www.its.ac.id/smart-erasmus/")}>
           <Icon name="person" size={20} color="#34354E" />
           <Text style={{color: "#34354E"}}>Profile</Text>
         </TouchableOpacity>
